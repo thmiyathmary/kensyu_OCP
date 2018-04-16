@@ -1,7 +1,12 @@
 public class DrawingTool {
     public void DrawAllShapes(List shapeList) {
-        for (int i = 0; i < shapeList.size(); i++) {
-            shapeList.get(i).Draw();
+        List<Circle> circleList = shapeList.stream().filter(shape -> shape.instanceof(Circle);
+        List<Square> squareList = shapeList.stream().filter(shape -> shape.instanceof(Square);
+        for (Circle circle : circleList) {
+            circle.Draw()
+        }
+        for (Square square : squareList) {
+            square.Draw();
         }
     }
 }
